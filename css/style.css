@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* grilla basica */
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "section1 section2 section3"
+        "section1 section2 section3"
+        "section1 section2 section3"
+        "footer footer footer";
+    background-color: #f5c8fde5;
+    color: #1a1a1a;
+
+}
+
+/* --------------------- header style ------------------ */
+.header {
+    grid-area: header;
+    background-color: #1ae5c3;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 50px;
+}
+
+.nav li {
+    margin: 25px;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: larger 100px;
+}
+
+/*------------------- main style ---------------------*/
+
+/* section1 */
+.section1 {
+    grid-area: section1;
+    padding: 30px;
+}
+
+.section1 h2 {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.section1 p {
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.fotoMar {
+    max-width: 430px;
+}
+
+/* section2 */
+.section2 {
+    grid-area: section2;
+    padding: 30px;
+}
+
+.section2 h2 {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.section2 p {
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.fotoSol {
+    max-width: 430px;
+}
+
+/* section3 */
+.section3 {
+    grid-area: section3;
+    padding: 30px;
+}
+
+.section3 h2 {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.section3 p {
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.fotoTierra {
+    max-width: 430px;
+}
+
+
+.section2 form{
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*------------------ footer style ----------------------*/
+.footer {
+    grid-area: footer;
+    background: linear-gradient(63deg, rgba(185, 78, 223, 0.42619054457720584) 0%, rgba(74, 219, 149, 0.5466387238489145) 41%, rgba(0, 212, 255, 0.5130252784707633) 100%);
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.footer li {
+    margin: 25px;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #808080;
+    list-style: none;
+    align-items: center;
+}
+
+
+
+/* RESPINSIVE DESIGN MEDIA QUERY / MOBILE LAST */
+/* Mobile last = Max-width */
+@media (max-device-width:768px) {
+    .grilla {
+        grid-template-areas:
+            "header header header"
+            "section1 section1 section1"
+            "section2 section2 section2"
+            "section3 section3 section3"
+            "footer footer footer"
+    }
+    
+    /* HEADER */
+    .header {
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav ul {
+        list-style: none;
+        margin: 0px;
+    }
+
+    /* SECTIONS */
+    /* s1 */
+    .section1{
+        padding-top: 0px;
+        padding-bottom: 30px
+    }
+
+    .section1 p{
+        font-size: smaller;
+    }
+
+    /* s2 */
+    .section2{
+        padding-top: 0px;
+        padding-bottom: 30px
+    }
+
+    /* s3 */
+    .section3{
+        padding-top: 0px;
+        padding-bottom: 30px
+    }
+
+    /* imagenes */
+    .fotoMar {
+        max-width: 710px;
+        max-height: 500px;
+    }
+    .fotoSol {
+        max-width: 710px;
+        max-height: 500px;
+    }
+    .fotoTierra {
+        max-width: 710px;
+        max-height: 500px;
+    }
+    .section2 form{
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .section2 form{
+        padding-top: 20px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+}
