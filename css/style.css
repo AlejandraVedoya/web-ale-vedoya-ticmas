@@ -265,8 +265,10 @@ li:hover {
     }
 
     .nav ul {
+        flex-direction: column;
         list-style: none;
         margin: 0px;
+        text-align: center;
     }
 
     /* SECTIONS */
