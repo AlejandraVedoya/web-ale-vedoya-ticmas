@@ -12,108 +12,86 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "header header header"
+        "nav nav nav"
         "section1 section2 section3"
         "section1 section2 section3"
         "section1 section2 section3"
         "footer footer footer";
     background-color: #f5c8fde5;
     color: #1a1a1a;
+    justify-content: end;
+    align-content: stretch;
 
 }
 
 /* --------------------- header style ------------------ */
-.header {
-    grid-area: header;
-    background-color: #1ae5c3;
-    display: flex;
-    max-width: 100%;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-decoration: none;
-}
-
 .nav {
+    grid-area: nav;
+    background-color: #13f1c1;
     display: flex;
-    align-items: center;
-    max-width: 100%;
-    padding: 20px;
-}
-
-.nav ul {
-    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
     list-style: none;
-    margin: 50px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    transition: color;
 }
 
-.nav li {
-    margin: 25px;
-}
-
-li:hover {
-    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.600, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 0.5s cubic-bezier(0.600, 0.085, 0.680, 0.530) both;
-
-}
-
-.nav a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-size: larger 100px;
-}
-
+/* ----- main style ---------------------*/
 
 /* section1 */
+.grilla{
+    max-width: 100%;
+}
 .section1 {
     grid-area: section1;
     padding: 30px;
-    max-width: 100%;
-
 }
 
 .section1 h2 {
-    text-align: justify;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: bold;
-    max-width: 100%;
-
 }
 
 .section1 p {
-    text-align: justify;
+    text-align: center;
     font-weight: lighter;
-    max-width: 100%;
-
-
+    color: #999191;
 }
 
 .fotoMar {
     max-width: 100%;
+    
 }
 
 /* section2 */
 .section2 {
     grid-area: section2;
     padding: 30px;
-    max-width: 100%;
-
 }
 
 .section2 h2 {
-    text-align: justify;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: bold;
-    max-width: 100%;
-
 }
 
 .section2 p {
-    text-align: justify;
-    font-weight: lighter;
-    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #999191;
 
+}
+
+.carousel-item h5 {
+    color: #5dfcb9;
 }
 
 .fotoSol {
@@ -124,23 +102,20 @@ li:hover {
 .section3 {
     grid-area: section3;
     padding: 30px;
-    max-width: 100%;
-
 }
 
 .section3 h2 {
-    text-align: justify;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: bold;
-    max-width: 100%;
-
 }
 
 .section3 p {
-    text-align: justify;
-    max-width: 100%;
-    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #999191;
 }
 
 .fotoTierra {
@@ -196,7 +171,7 @@ li:hover {
 @media (max-device-width:768px) {
     .grilla {
         grid-template-areas:
-            "header header header"
+            "nav nav nav"
             "section1 section1 section1"
             "section2 section2 section2"
             "section3 section3 section3"
@@ -204,32 +179,17 @@ li:hover {
     }
 
     /* HEADER */
-    .header {
-        display: flex;
-        max-width: 100%;
-
-    }
-
     .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        list-style: none;
-        margin: 0px;
-        text-align: center;
+        max-width: 100%;
     }
 
     /* SECTIONS */
     /* s1 */
+
     .section1 {
-        max-width: 100%;
         padding-top: 0px;
-        padding-bottom: 30px
+        padding-bottom: 30px;
+        max-width: 100%;
     }
 
     .section1 p {
@@ -238,32 +198,29 @@ li:hover {
 
     /* s2 */
     .section2 {
-        max-width: 100%;
         padding-top: 0px;
-        padding-bottom: 30px
+        padding-bottom: 30px;
+        max-width: 100%;
     }
 
     /* s3 */
     .section3 {
-        max-width: 100%;
         padding-top: 0px;
-        padding-bottom: 30px
+        padding-bottom: 30px;
+        max-width: 100%;
     }
 
     /* imagenes */
     .fotoMar {
         max-width: 100%;
-        max-height: 100%;
     }
 
     .fotoSol {
         max-width: 100%;
-        max-height: 100%;
     }
 
     .fotoTierra {
         max-width: 100%;
-        max-height: 100%;
     }
 
     .section2 form {
