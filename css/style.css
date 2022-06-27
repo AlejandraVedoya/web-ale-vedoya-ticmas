@@ -43,9 +43,10 @@
 /* ----- main style ---------------------*/
 
 /* section1 */
-.grilla{
+.grilla {
     max-width: 100%;
 }
+
 .section1 {
     grid-area: section1;
     padding: 30px;
@@ -66,7 +67,7 @@
 
 .fotoMar {
     max-width: 100%;
-    
+
 }
 
 /* section2 */
@@ -222,6 +223,13 @@
     .fotoTierra {
         max-width: 100%;
     }
+
+    .section1 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* forms */
 
     .section2 form {
         max-width: 50%;

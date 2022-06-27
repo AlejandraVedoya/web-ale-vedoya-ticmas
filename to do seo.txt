@@ -1,0 +1,4 @@
+seo keywords
+    <meta name="keywords" content="contacto, formulario, presupuesto, diseño">
+etiqueta title
+ poner en titulo el nombre dle sitio y junto a eso el nombre de la pagina (personal, trabajos, etc)
