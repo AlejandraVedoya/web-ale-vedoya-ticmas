@@ -1,4 +1,14 @@
-seo keywords
+SEO 
+etiqueta meta:keywords
     <meta name="keywords" content="contacto, formulario, presupuesto, diseño">
+
 etiqueta title
- poner en titulo el nombre dle sitio y junto a eso el nombre de la pagina (personal, trabajos, etc)
+ poner en titulo el nombre del sitio y junto a eso el nombre de la pagina (personal, trabajos, etc)
+ ejemplo: AV Diseño Gráfico | trabajos
+
+metaetiqueta
+<meta name="description" content="Parrafo">
+    <meta name="description" content="Creacion integral de imagen de marca para tu proyecto">
+
+optimizar imagenes
+cloudinary.com

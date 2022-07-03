@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="trabajos, clientes, curriculum, contactos">
     <link rel="shortcut icon" href="./img/ghost_32_orange.png" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="./css/style.css">
     <title>AV Diseño Gráfico | Trabajos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,98 +16,73 @@
 
 <body>
     <!-- HEADER -->
-    <div class="grilla">
-        <header class="nav">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">Inicio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./trabajos.html">Trabajos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./experiencia.html">Experiencia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./personal.html">Personal</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- SECTIONS -->
-        <section class="section2">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="imagen 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="imagen 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="imagen 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/imagen-de-muestra-1.png" class="d-block w-100" alt="Imagen 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Imagen de Marca</h5>
-                            <p>Lorem ipsum dolor sit amet ut molestiae officiis voluptatem at ullam obcaecati corrupti
-                                dolore laudantium.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/imagen-de-muestra-2.png" class="d-block w-100" alt="Imagen 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Talleres</h5>
-                            <p>Lorem ipsum dolor sit amet ut molestiae officiis voluptatem at ullam obcaecati corrupti
-                                dolore laudantium.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/imagen-de-muestra-3.png" class="d-block w-100" alt="Imagen 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Diseño digital</h5>
-                            <p>Lorem ipsum dolor sit amet ut molestiae officiis voluptatem at ullam obcaecati corrupti
-                                dolore laudantium.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+    <header class="nav">
+        <a href="./index.html">
+            <img src="./img/logo-av.png" alt="logoav">
+        </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./experiencia.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./personal.html">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <!-- SECTIONS -->
+    <div class="grilla">
+        <section class="trabajos">
+            <img src="./img/Portfolio Ale Vedoya 2022-06.jpg" alt="fotoMar" class="fotoMar">
+            <h4>Experiencia</h4>
+            <p>Más de 15 años de experiencia</p>
+            <button class="btn">ver mas</button>
         </section>
-        <!-- FOOTER -->
-        <footer class="footer">
-            <ul>
-                <li>
-                    <a href="http://www.behance.net/alevedoya">Behance</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/alevedoya/">linkedin</a>
-                </li>
-                <li>
-                    <a
-                        href="https://onedrive.live.com/embed?cid=493BF66F41D35A51&amp;resid=493BF66F41D35A51%211420&amp;authkey=AEAnNyETcUPekpY&amp;em=2">Porfolio</a>
-                </li>
-            </ul>
-        </footer>
+        <section class="trabajos">
+            <img src="./img/Portfolio Ale Vedoya 2022-08.jpg" alt="fotoSol" class="fotoSol">
+            <h4>Proyectos interdisciplinarios</h4>
+            <p>Sector privado y organismos estatales</p>
+            <button class="btn">ver mas</button>
+        </section>
+        
+        <section class="trabajos">
+            <img src="./img/Portfolio Ale Vedoya 2022-12.jpg" alt="fotoTierra" class="fotoTierra">
+            <h4>Freelance</h4>
+            <p>Algunos proyectos realizados de forma remota</p>
+            <button class="btn">ver mas</button>
+        </section>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="http://www.behance.net/alevedoya">Behance</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/alevedoya/">linkedin</a>
+            </li>
+            <li>
+                <a
+                    href="https://onedrive.live.com/embed?cid=493BF66F41D35A51&amp;resid=493BF66F41D35A51%211420&amp;authkey=AEAnNyETcUPekpY&amp;em=2">Porfolio</a>
+            </li>
+        </ul>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">

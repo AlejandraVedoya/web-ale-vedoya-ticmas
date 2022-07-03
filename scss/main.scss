@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+@import './secciones/trabajos';
+@import "./secciones/header";
+@import "./secciones/index";
+@import './secciones/mainSections';
+
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "nav nav nav"
+    "section1 section2 section3"
+    "section1 section2 section3"
+    "section1 section2 section3"
+    "footer footer footer";
+    background-color: #f5c8fde5;
+    color: #1a1a1a;
+    justify-content: end;
+    align-content: stretch;
+     }
+
+
+
+/*------------------ footer style ----------------------*/
+
+.footer {
+    grid-area: footer;
+    background: linear-gradient(63deg, rgba(185, 78, 223, 0.4261905446) 0%, rgba(74, 219, 149, 0.5466387238) 41%, rgba(0, 212, 255, 0.5130252785) 100%);
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: stretch;
+    }
+
+    li {
+        margin: 25px;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #808080;
+        list-style: none;
+        align-items: center;
+    }
+}
+
+/* RESPINSIVE DESIGN MEDIA QUERY / MOBILE LAST */
+/* Mobile last = Max-width */
+@media (max-device-width: 768px) {
+
+    .grilla {
+    grid-template-areas: 
+    "nav nav nav"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3"
+    "footer footer footer";
+    }
+
+/* HEADER */
+    .nav {
+    max-width: 100%;
+    }
+
+/* SECTIONS */
+/* s1 */
+
+.section1 {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    }
+
+/* s2 */
+.section2 {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    }
+
+/* s3 */
+.section3 {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    }
+
+/* imagenes */
+
+.fotoMar,.fotoSol,.fotoTierra {
+    max-width: 100%;
+    }
+
+/* forms */
+
+.section2 form {
+    max-width: 50%;
+    max-height: 50%;
+    padding-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    }
+}

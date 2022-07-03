@@ -1,0 +1,28 @@
+/* --------------------- header style ------------------ */
+
+.nav {
+    grid-area: nav;
+    background-color: #13f1c1;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    transition: color;
+}
+
+header{
+    img{
+    position: static;
+    padding: 0.5rem;
+    &:hover{
+       transform: translate(1rem);
+       transition: 1s all ease;
+    }
+
+    }
+}
