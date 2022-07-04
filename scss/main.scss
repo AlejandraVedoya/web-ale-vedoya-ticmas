@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    padding: 0px;
-    margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -17,7 +15,6 @@
 .grilla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0px 0px;
     grid-template-areas: 
     "nav nav nav"
     "section1 section2 section3"
@@ -28,6 +25,8 @@
     color: #1a1a1a;
     justify-content: end;
     align-content: stretch;
+    max-height: fit-content;
+    
      }
 
 
@@ -38,8 +37,7 @@
     grid-area: footer;
     background: linear-gradient(63deg, rgba(185, 78, 223, 0.4261905446) 0%, rgba(74, 219, 149, 0.5466387238) 41%, rgba(0, 212, 255, 0.5130252785) 100%);
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    
 
     ul {
         list-style: none;
@@ -49,6 +47,7 @@
         flex-direction: row;
         justify-content: center;
         align-content: stretch;
+        max-height: fit-content;
     }
 
     li {
@@ -83,33 +82,45 @@
     }
 
 /* SECTIONS */
-/* s1 */
 
 .section1 {
-    padding-top: 0px;
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
     padding-bottom: 30px;
     max-width: 100%;
+    img{
+        width: 100%;
+    }
     }
 
-/* s2 */
 .section2 {
-    padding-top: 0px;
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
     padding-bottom: 30px;
     max-width: 100%;
+    max-height: 100%;
+    img{
+        width: 100%;
+    }
     }
 
-/* s3 */
 .section3 {
-    padding-top: 0px;
+    grid-area: section3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
     padding-bottom: 30px;
     max-width: 100%;
+    max-height: 100%;
+    img{
+        width: 100%;
+    }
     }
 
-/* imagenes */
-
-.fotoMar,.fotoSol,.fotoTierra {
-    max-width: 100%;
-    }
 
 /* forms */
 
@@ -121,3 +132,4 @@
     max-height: 100%;
     }
 }
+
