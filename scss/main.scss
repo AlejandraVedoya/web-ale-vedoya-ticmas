@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    max-width: 100%;
-    max-height: 100%;
+    margin-bottom: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
@@ -41,7 +40,7 @@
     grid-area: footer;
     background: linear-gradient(63deg, rgba(185, 78, 223, 0.4261905446) 0%, rgba(74, 219, 149, 0.5466387238) 41%, rgba(0, 212, 255, 0.5130252785) 100%);
     justify-content: center;
-    max-height: 100%;
+    
     
 
     ul {
@@ -53,6 +52,7 @@
         justify-content: center;
         align-content: stretch;
         padding-left: 0;
+        margin-bottom: 0;
     }
 
     li {
@@ -146,12 +146,21 @@ ul {
     max-height: fit-content;
     flex-direction: column;
     align-items: center;
+        li {
+            margin: 1px;
+            align-items: center;
+        }
 }
 }
 
 .contacto{
     align-items: stretch;
     flex-direction: column;
+}
+
+.iframe{
+    background-color: #808080;
+    padding: 1rem;
 }
 
 }

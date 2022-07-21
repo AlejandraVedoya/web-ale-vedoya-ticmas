@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  max-width: 100%;
-  max-height: 100%; }
+  margin-bottom: 0; }
 
 .personal {
   background-color: #d0fdf4; }
@@ -139,8 +138,7 @@ header img {
   padding: 1rem; }
   .contacto form {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
     color: #999191; }
@@ -150,9 +148,11 @@ header img {
       color: #999191;
       padding: 0.3rem; }
 
-iframe {
-  max-width: 100%;
-  max-height: 100%; }
+.iframe {
+  padding: 1rem;
+  background-color: #f5c8fde5;
+  width: 100vw;
+  height: 100vh; }
 
 .grilla {
   display: grid;
@@ -169,8 +169,7 @@ iframe {
 .footer {
   grid-area: footer;
   background: linear-gradient(63deg, rgba(185, 78, 223, 0.426191) 0%, rgba(74, 219, 149, 0.546639) 41%, rgba(0, 212, 255, 0.513025) 100%);
-  justify-content: center;
-  max-height: 100%; }
+  justify-content: center; }
   .footer ul {
     list-style: none;
     display: flex;
@@ -179,7 +178,8 @@ iframe {
     flex-direction: row;
     justify-content: center;
     align-content: stretch;
-    padding-left: 0; }
+    padding-left: 0;
+    margin-bottom: 0; }
   .footer li {
     margin: 25px;
     align-items: center; }
@@ -243,6 +243,12 @@ iframe {
     max-height: fit-content;
     flex-direction: column;
     align-items: center; }
+    .footer ul li {
+      margin: 1px;
+      align-items: center; }
   .contacto {
     align-items: stretch;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .iframe {
+    background-color: #808080;
+    padding: 1rem; } }
